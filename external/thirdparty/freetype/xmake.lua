@@ -1,0 +1,6 @@
+target("external_freetype")
+    set_kind("headeronly")
+    add_rules("sail.predef")
+    add_files("**.h")
+    add_includedirs(".", { public = true })
+target_end()

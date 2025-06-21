@@ -1,0 +1,6 @@
+target("external_argparse")
+    set_kind("headeronly")
+    add_rules("sail.predef")
+    add_headerfiles("include/doctest.h")
+    add_includedirs("include", {public = true})
+target_end()

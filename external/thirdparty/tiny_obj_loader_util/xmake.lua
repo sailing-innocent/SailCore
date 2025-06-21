@@ -1,0 +1,6 @@
+target("external_tiny_obj_loader_util")
+    set_kind("static")
+	add_rules("sail.predef")
+	add_includedirs("include", { public = true })
+	add_files("tiny_obj_loader.cpp")
+target_end()

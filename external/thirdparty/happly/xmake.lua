@@ -1,0 +1,8 @@
+target("external_happly")
+    set_kind("headeronly")
+    add_rules("sail.predef")
+    add_includedirs("include", {public = true})
+    add_headerfiles("include/happly.h")
+    -- enable RTTI (for dynamic cast)
+    add_cxxflags("/GR", { public = true })
+target_end()

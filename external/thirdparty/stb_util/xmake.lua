@@ -1,0 +1,7 @@
+target("external_stb_util")
+    set_kind("static")
+    add_rules("sail.predef")
+	add_includedirs("include", { public = true })
+    add_files("stb_util.cpp")
+    add_packages("stb", {public = true})
+target_end()

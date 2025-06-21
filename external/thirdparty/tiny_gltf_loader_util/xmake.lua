@@ -1,0 +1,8 @@
+target("external_tiny_gltf_util")
+    set_kind("static")
+	add_rules("sail.predef")
+	add_includedirs("include", { public = true })
+	add_files("tiny_gltf.cc")
+	set_languages("cxx20")
+    add_deps("external_stb_util")
+target_end()
