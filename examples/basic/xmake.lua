@@ -1,0 +1,5 @@
+target("multi_process")
+    set_kind("binary")
+    add_packages("libhv")
+    add_files("multi_process.cpp")
+target_end()
