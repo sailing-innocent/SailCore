@@ -1,3 +1,6 @@
+includes("cpp")
+
+
 target("multi_process")
     set_kind("binary")
     add_packages("libhv")
