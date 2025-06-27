@@ -1,0 +1,5 @@
+target("k_compiler_with_vm")
+    set_kind("binary")
+    add_files("k_compiler_with_vm.cpp")
+    add_deps("SailLLVM", "SailBase")
+target_end()

@@ -6,3 +6,4 @@ if get_config("sail_enable_cuda") then
 end
 
 includes("cpu")
+includes("llvm")

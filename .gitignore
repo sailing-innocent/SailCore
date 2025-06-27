@@ -19,3 +19,5 @@ compile_commands.json
 .mypy_cache
 release
 releasedbg
+
+*.log

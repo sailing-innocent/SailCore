@@ -1,0 +1,6 @@
+SHARED_MODULE("SailLLVM", "SAIL_LLVM", engine_version)
+    add_includedirs("include", { public = true })
+    add_files("src/**.cpp")
+    add_deps("SailBase")
+    set_pcxxheader("src/pch.h")
+    add_rules("sail.llvm")
