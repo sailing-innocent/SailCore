@@ -29,10 +29,16 @@ function sail_add_test(folder, name, deps, opts)
     target_end()
 end
 
+sail_add_test("basic", "dummy", {}) -- basic feature for cpp
+sail_add_test("basic", "stl", {}) -- STL feature for cpp
+sail_add_test("basic", "advanced", {}) -- advanced feature for cpp
+
+-- for TBB and embree
 sail_add_test("cpu", "tbb", {
     "SailCPU"
 })
 
+-- for CUDA
 if has_config("sail_enable_cuda") then 
     if has_config("sail_enable_cuda_tensor") then 
         sail_add_test("cut", "cublas", {"SailCuT"}, {

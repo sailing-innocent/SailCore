@@ -27,6 +27,7 @@ add_requires("eastl")
 add_requires("imgui") 
 add_requires("pybind11")
 add_requires("libhv")
+add_requires("spdlog")
 
 
 -------------------------------------
