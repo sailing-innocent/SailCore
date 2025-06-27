@@ -29,6 +29,8 @@ add_requires("pybind11")
 add_requires("libhv")
 add_requires("spdlog")
 
+--- assets
+includes("assets")
 
 -------------------------------------
 --- CORE MODULES
@@ -37,5 +39,8 @@ add_requires("spdlog")
 includes("external")
 includes("modules")
 includes("internal")
+-------------------------------------
+--- TESTS AND EXAMPLES
+-------------------------------------
 includes("tests")
 includes("examples")

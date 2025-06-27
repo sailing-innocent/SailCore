@@ -1,0 +1,20 @@
+#version 450 core
+
+layout(triangles, equal_spacing, ccw) in;
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
+out vec3 FragPos;
+out vec3 Normal;
+
+void main()
+{
+    vec4 upos = gl_TessCoord.x * gl_in[0].gl_Position;
+    vec4 vpos = gl_TessCoord.y * gl_in[1].gl_Position;
+    vec4 wpos = gl_TessCoord.z * gl_in[2].gl_Position;
+    vec4 pos = upos + vpos + wpos;
+    gl_Position = projection * view * model * pos;
+    FragPos = pos.xyz;
+    Normal = vec3(0.0, 1.0, 0.0);
+}
