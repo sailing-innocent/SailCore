@@ -10,3 +10,4 @@ function add_demo_cpp(name, deps)
 end 
 
 add_demo_cpp("00.ppl") -- Parallel Patterns Library
+add_demo_cpp("01.use_embree") -- Intel Embree
