@@ -13,3 +13,4 @@ function cpp_demo(name, deps)
 end
 
 cpp_demo("simd_sample")
+cpp_demo("thread_local")
